@@ -55,7 +55,6 @@
 
 // 重置
 - (void)reset {
-    
     self.frame = _originFrame;
     self.alpha = 1;
     self.animCount = 0;

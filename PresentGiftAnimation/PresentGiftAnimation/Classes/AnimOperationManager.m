@@ -7,7 +7,6 @@
 //
 
 #import "AnimOperationManager.h"
-
 #import "AnimOperation.h"
 
 @interface AnimOperationManager ()

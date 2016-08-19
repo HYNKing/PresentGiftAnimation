@@ -14,13 +14,78 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rth-Er-y7b">
+                                <rect key="frame" x="20" y="587" width="69" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="叶良辰"/>
+                                <connections>
+                                    <action selector="ylcButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7T-U3-Q8Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sP-fL-9sl">
+                                <rect key="frame" x="109" y="587" width="68.5" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="赵日天">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="zrtButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chT-UZ-qJ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f81-Lf-Hvm">
+                                <rect key="frame" x="197" y="587" width="69" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="龙傲天">
+                                    <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="latButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUb-OA-khH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJu-As-4qC">
+                                <rect key="frame" x="286.5" y="587" width="68.5" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="福尔康">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fekButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxN-MY-cAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69903846449999996" green="0.69903846449999996" blue="0.69903846449999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="f81-Lf-Hvm" firstAttribute="height" secondItem="rth-Er-y7b" secondAttribute="height" id="0Qu-3a-USh"/>
+                            <constraint firstItem="CJu-As-4qC" firstAttribute="centerY" secondItem="rth-Er-y7b" secondAttribute="centerY" id="12D-Ae-J6w"/>
+                            <constraint firstItem="9sP-fL-9sl" firstAttribute="height" secondItem="rth-Er-y7b" secondAttribute="height" id="4hO-rQ-PL7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rth-Er-y7b" secondAttribute="bottom" constant="50" id="6ad-Pn-Uuy"/>
+                            <constraint firstItem="CJu-As-4qC" firstAttribute="leading" secondItem="f81-Lf-Hvm" secondAttribute="trailing" constant="20" id="6af-9O-wGQ"/>
+                            <constraint firstAttribute="trailing" secondItem="CJu-As-4qC" secondAttribute="trailing" constant="20" id="8bv-Na-yuL"/>
+                            <constraint firstItem="CJu-As-4qC" firstAttribute="height" secondItem="rth-Er-y7b" secondAttribute="height" id="GbV-eZ-0ha"/>
+                            <constraint firstItem="f81-Lf-Hvm" firstAttribute="leading" secondItem="9sP-fL-9sl" secondAttribute="trailing" constant="20" id="JY8-IU-FB6"/>
+                            <constraint firstItem="rth-Er-y7b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LDu-n1-RuR"/>
+                            <constraint firstItem="f81-Lf-Hvm" firstAttribute="width" secondItem="rth-Er-y7b" secondAttribute="width" id="Ueo-jT-bVX"/>
+                            <constraint firstItem="9sP-fL-9sl" firstAttribute="width" secondItem="rth-Er-y7b" secondAttribute="width" id="eUq-0E-rPS"/>
+                            <constraint firstItem="9sP-fL-9sl" firstAttribute="centerY" secondItem="rth-Er-y7b" secondAttribute="centerY" id="fa9-gf-Ech"/>
+                            <constraint firstItem="CJu-As-4qC" firstAttribute="width" secondItem="rth-Er-y7b" secondAttribute="width" id="fbM-d2-hlw"/>
+                            <constraint firstItem="9sP-fL-9sl" firstAttribute="leading" secondItem="rth-Er-y7b" secondAttribute="trailing" constant="20" id="omI-3K-ijh"/>
+                            <constraint firstItem="f81-Lf-Hvm" firstAttribute="centerY" secondItem="rth-Er-y7b" secondAttribute="centerY" id="q9s-ar-7Nu"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="fekButton" destination="CJu-As-4qC" id="QD0-Rz-KhT"/>
+                        <outlet property="latButton" destination="f81-Lf-Hvm" id="3dT-VF-gL6"/>
+                        <outlet property="ylcButton" destination="rth-Er-y7b" id="zjP-R9-hIn"/>
+                        <outlet property="zrtButton" destination="9sP-fL-9sl" id="X27-cR-Sy9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="279.5" y="208.5"/>
         </scene>
     </scenes>
 </document>

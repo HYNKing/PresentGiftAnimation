@@ -10,7 +10,6 @@
 
 @implementation ShakeLabel
 
-
 - (void)startAnimWithDuration:(NSTimeInterval)duration {
     
     //    [UIView animateKeyframesWithDuration:duration delay:0 options:0 animations:^{
